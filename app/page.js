@@ -1,4 +1,5 @@
 "use client"
+import Label from '../components/Footers/Label';
 import { useState } from "react";
 import Main from '@/components/Home'
 // import Label from "@/components/Footers/Label";

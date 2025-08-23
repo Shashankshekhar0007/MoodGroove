@@ -1,7 +1,7 @@
 import "./globals.css";
 export const metadata = {
-  title: "Harmonika",
-  description: "A Music Recommendation Application By Shreyansh Gupta",
+  title: "MoodGroove",
+  description: "A Music Recommendation Application By Shashank Shekhar",
 };
 
 export default function RootLayout({ children }) {

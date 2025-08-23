@@ -24,15 +24,20 @@ export default function Home() {
         <section className="flex flex-col justify-center items-center mx-auto relative place-items-center min-h-screen bg-black/60 overflow-hidden pb-10">
             <LoadingBar color='#cbcbcb' ref={ref} />
             <div className='max-w-5xl mb-5 my-8'>
-                <div className='my-6 mx-auto w-fit text-center select-none'>
-                    <p className="font-fancy text-4xl text-center sm:text-5xl md:text-3xl font-bold text-gray-200 -mb-5">Welcome to</p>
-                    <h1 className="font-fancy text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">Harmonika</h1>
+                <div className="my-6 mx-auto w-fit text-center select-none">
+                    <p className="font-fancy text-4xl sm:text-5xl md:text-3xl font-bold text-gray-200 leading-relaxed">
+                        Welcome to
+                    </p>
+                    <h1 className="font-fancy text-lg sm:text-2xl md:text-3xl font-bold text-gray-200 mt-2">
+                        MoodGroove
+                    </h1>
                 </div>
+
                 <div className='mt-6 mb-6'>
-                    <SearchBar setLabelText= {setLabelText} setSongs={setSongs}/>
+                    <SearchBar setLabelText={setLabelText} setSongs={setSongs} />
                 </div>
-            {labelText && <p className='text-gray-100 tracking-wide text-left text-md my-4 left-2 relative'>{labelText}</p>}
-                <MusicSection setLabelText = {setLabelText} songs={songs} setSongs= {setSongs}/>
+                {labelText && <p className='text-gray-100 tracking-wide text-left text-md my-4 left-2 relative'>{labelText}</p>}
+                <MusicSection setLabelText={setLabelText} songs={songs} setSongs={setSongs} />
             </div>
         </section>
 
